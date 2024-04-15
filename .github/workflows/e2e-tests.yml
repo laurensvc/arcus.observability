@@ -15,6 +15,9 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v2
 
+      - name: Go to docs folder
+        run: cd docs
+
       - name: Use Node.js
         uses: actions/setup-node@v2
         with:
